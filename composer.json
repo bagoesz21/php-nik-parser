@@ -1,0 +1,19 @@
+{
+    "name": "bagoesz21/php-nik-parser",
+    "description": "Check National Identity Number to Identity gender, birth of date, and region in Indonesia",
+    "authors": [
+        {
+            "name": "BEEP",
+            "email": "bgs.beep21@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "nesbot/carbon": "^2.58"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bagoesz21\\PhpNikParser\\": "src/"
+        }
+    }
+}
