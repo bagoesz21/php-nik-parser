@@ -96,6 +96,8 @@ class NIKParser
             return $gender['key'] === (int)$key;
         });
         if(empty($gender))return null;
+
+        $gender = array_shift(array_values($gender));
         return $gender['text'];
     }
 
@@ -259,7 +261,7 @@ class NIKParser
 
     public function loadRegionData()
     {
-        $path = __DIR__ . '../regions.json';
+        $path = __DIR__ . '/regions.json';
 
         $this->regions = json_decode(file_get_contents($path), true);
         return $this;
